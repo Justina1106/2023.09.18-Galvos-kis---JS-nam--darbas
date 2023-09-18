@@ -34,3 +34,34 @@ if (correctAnswer11 === playerAnswer11 && correctAnswer12 === playerAnswer12) {
 }       
 
 console.groupEnd()
+
+console.groupCollapsed('ANTRAS LYGIS')
+//ANTRAS LYGIS:
+//1. Norint patekti į kitą lygį, reikia atsakyti į abu klausimus iš dviejų:
+//2. Jeigu atsakytas tik vienas klausimas, tai papildomai reikia parašyti kuris atsakymas buvo neteisingas.
+
+// Kokia yra arčiausia Žemės esanti žvaigždė?
+let teisingas1 = 'sun'
+
+// Kiek yra 123 + 456
+let teisingas2 = 579
+
+let atsakymas1 = 'sun'
+let atsakymas2 = 57
+
+console.log(teisingas1)
+console.log(teisingas2)
+
+console.log(atsakymas1)
+console.log(atsakymas2)
+
+
+if (teisingas1 === atsakymas1 && teisingas2 === atsakymas2) {
+    console.log('Norint patekti į kitą lygį, reikia atsakyti į abu klausimus iš dviejų:')
+} else if (teisingas1 !== atsakymas1 && teisingas2 === atsakymas2) {
+    console.log('atsakytas tik vienas klausimas, pirmas buvo neteisingas.')
+} else if (teisingas1 === atsakymas1 && teisingas2 !== atsakymas2) {
+    console.log('atsakytas tik vienas klausimas, antras buvo neteisingas.')
+}
+
+console.groupEnd()
