@@ -65,3 +65,43 @@ if (teisingas1 === atsakymas1 && teisingas2 === atsakymas2) {
 }
 
 console.groupEnd()
+
+console.groupCollapsed('TREČIAS LYGIS')
+//TREČIAS LYGIS:
+//1. Trys klausimai ir į kitą lygį pereinama, jeigu atsakomi bent du klausimai.
+//2. Jeigu atsakomi du klausimai, turi būti parodoma, kuris klausimas buvo neatsakytas.
+//3. Jeigu atsakomi mažiau nei du klausimai, tai turi parodyti, kuris klausimas buvo atsakytas.
+
+//1 1 1
+//1 1 0
+//1 0 1
+//0 1 1
+//1 0 0
+//0 1 0
+//0 0 1
+//0 0 0
+
+// Kokia yra arčiausia Žemės esanti žvaigždė?
+let correct1 = 'sun'
+
+// Kiek yra 123 + 456
+let correct2 = 579
+
+// Kiek para turi valandų?
+let correct3 = 24
+
+let answer1 = 'sun'
+let answer2 = 57
+let answer3 = 24
+
+console.log(correct1)
+console.log(correct2)
+console.log(correct3)
+
+console.log(answer1)
+console.log(answer2)
+console.log(answer3)
+
+
+
+console.groupEnd()
