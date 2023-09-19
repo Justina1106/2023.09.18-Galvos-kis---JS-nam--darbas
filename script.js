@@ -46,7 +46,7 @@ let teisingas1 = 'sun'
 // Kiek yra 123 + 456
 let teisingas2 = 579
 
-let atsakymas1 = 'sun'
+let atsakymas1 = 'moon'
 let atsakymas2 = 57
 
 console.log(teisingas1)
@@ -62,6 +62,8 @@ if (teisingas1 === atsakymas1 && teisingas2 === atsakymas2) {
     console.log('atsakytas tik vienas klausimas, pirmas buvo neteisingas.')
 } else if (teisingas1 === atsakymas1 && teisingas2 !== atsakymas2) {
     console.log('atsakytas tik vienas klausimas, antras buvo neteisingas.')
+}  else {
+    console.log('Nepatekai i kita lygi: abu atsakymai buvo neteisingi.')
 }
 
 console.groupEnd()
@@ -82,17 +84,17 @@ console.groupCollapsed('TREČIAS LYGIS')
 //0 0 0
 
 // Kokia yra arčiausia Žemės esanti žvaigždė?
-let correct1 = 'sun'
+let correct1 = 1
 
 // Kiek yra 123 + 456
-let correct2 = 579
+let correct2 = 1
 
 // Kiek para turi valandų?
-let correct3 = 24
+let correct3 = 1
 
-let answer1 = 'sun'
-let answer2 = 57
-let answer3 = 24
+let answer1 = 1
+let answer2 = 0
+let answer3 = 0
 
 console.log(correct1)
 console.log(correct2)
@@ -102,6 +104,22 @@ console.log(answer1)
 console.log(answer2)
 console.log(answer3)
 
-
+if (correct1 === answer1 && correct2 === answer2 && correct3 === answer3) {
+   console.log('Patekai i kita lygi: visi atsakymai teisingi.')
+} else if (correct1 === answer1 && correct2 === answer2 && correct3 !== answer3) {
+   console.log('Patekai i kita lygi: tačiau trečias atsakymas buvo neteisingas.')
+} else if (correct1 === answer1 && correct2 !== answer2 && correct3 === answer3) {
+   console.log('Patekai i kita lygi: tačiau antras atsakymas buvo neteisingas.')
+} else if (correct1 !== answer1 && correct2 === answer2 && correct3 === answer3) {
+   console.log('Patekai i kita lygi: tačiau pirmas atsakymas buvo neteisingas.')
+} else if (correct1 === answer1 && correct2 !== answer2 && correct3 !== answer3) {
+   console.log('Nepatekai i kita lygi: tačiau pirmas atsakymas buvo teisingas.')
+} else if (correct1 !== answer1 && correct2 === answer2 && correct3 !== answer3) {
+   console.log('Nepatekai i kita lygi: tačiau antras atsakymas buvo teisingas.')
+} else if (correct1 !== answer1 && correct2 !== answer2 && correct3 === answer3) {
+   console.log('Nepatekai i kita lygi: tačiau trečias atsakymas buvo teisingas.')
+} else {
+   console.log('Nepatekai i kita lygi: visi atsakymai buvo neteisingi.')
+}
 
 console.groupEnd()
